@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Hello World",
+  "version": "2.1",
+  "minimum_chrome_version": "23",
+  "icons": {
+    "16": "icon_16.png",
+    "128": "icon_128.png"
+  },
+ "bluetooth": {
+  "uuids": [ "180D", "1809", "180F","180A","feed","1801"],
+  "low_energy": true
+},
+  "app": {
+    "background": {
+      "scripts": ["main.js"]
+    }
+  }
+}
