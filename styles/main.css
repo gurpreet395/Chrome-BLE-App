@@ -1,0 +1,519 @@
+
+/*
+Main.css style file to override bootstrap classes
+Author: Abhay Kashyap
+Mobile-First Approach. Default styling max-width 767px
+*/
+/* +++++++++++++++++++++++++++++++++++++++ LESS VARIABLES ++++++++++++++++++++++++++++++++++++++ */
+/* ---------- Media query variables ---------- */
+/* ---------- Color Palette ---------- */
+/* Pastel colors */
+/* Text Color - A dark shade of gray */
+/* Base background */
+/* Accent Color - 	This is the "attention grabbing" color used for Icons, buttons, links or any part that has to stand out. 
+ * 					Used minimally but for the most important elements in a page!	
+ */
+/*--------------- Fonts --------------- */
+/* Font styles */
+/* Font sizes */
+/* ------ Common Element Properties ---- */
+/* Footer Variables */
+/* ++++++++++++++++++++++++++++++++++++++++ LESS MIXINS ++++++++++++++++++++++++++++++++++++++++ */
+/* Mixin to scale down/up the default responsive font size */
+/* Mixin to add responsive padding to top and bottom */
+/*----------------------------- Webkit transition Mixins -------------------------- */
+/* Mixin for linear gradient across different webkits */
+/* ============================================ Default Base Styling ======================================== */
+@import url(https://fonts.googleapis.com/css?family=Comfortaa);
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  background-color: #fffdfd;
+  color: #505050;
+  font-family: Open Sans, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+@media only screen and (min-width: 480px) {
+  body {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  body {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Armata, Arial, sans-serif;
+  font-weight: 700;
+  line-height: 1.5;
+}
+h1 {
+  font-size: 24px;
+}
+@media only screen and (min-width: 480px) {
+  h1 {
+    font-size: 27px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 27px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+h2 {
+  font-size: 21.28px;
+}
+@media only screen and (min-width: 480px) {
+  h2 {
+    font-size: 23.94px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  h2 {
+    font-size: 23.94px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  h2 {
+    font-size: 26.6px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  h2 {
+    font-size: 26.6px;
+  }
+}
+h3 {
+  font-size: 18.56px;
+}
+@media only screen and (min-width: 480px) {
+  h3 {
+    font-size: 20.88px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  h3 {
+    font-size: 20.88px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  h3 {
+    font-size: 23.2px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  h3 {
+    font-size: 23.2px;
+  }
+}
+h4 {
+  font-size: 16px;
+}
+@media only screen and (min-width: 480px) {
+  h4 {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  h4 {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  h4 {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  h4 {
+    font-size: 20px;
+  }
+}
+h5 {
+  font-size: 13.92px;
+}
+@media only screen and (min-width: 480px) {
+  h5 {
+    font-size: 15.66px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  h5 {
+    font-size: 15.66px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  h5 {
+    font-size: 17.4px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  h5 {
+    font-size: 17.4px;
+  }
+}
+h6 {
+  font-size: 12px;
+}
+@media only screen and (min-width: 480px) {
+  h6 {
+    font-size: 13.5px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  h6 {
+    font-size: 13.5px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  h6 {
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  h6 {
+    font-size: 15px;
+  }
+}
+p {
+  font-family: Open Sans, Helvetica, sans-serif;
+  line-height: 1.75;
+}
+p {
+  font-size: 16px;
+}
+@media only screen and (min-width: 480px) {
+  p {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  p {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  p {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  p {
+    font-size: 20px;
+  }
+}
+hr {
+  color: #26466d;
+}
+a {
+  color: #db2929;
+}
+a:hover,
+a.focus {
+  text-decoration: none;
+  color: #26466d;
+}
+code {
+  color: #505050;
+  background-color: #f9f7f7;
+}
+pre {
+  color: #1d1d1d;
+  border: none;
+  background-color: #f9f7f7;
+  padding: 20px;
+  font-size: 12px;
+}
+@media only screen and (min-width: 480px) {
+  pre {
+    font-size: 13.5px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  pre {
+    font-size: 13.5px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  pre {
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  pre {
+    font-size: 15px;
+  }
+}
+/* --------------- Footer Styling --------------- */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 35px;
+  font-family: Armata, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  padding: 5px;
+  padding-top: 10px;
+}
+/* ---------------- Bootstrap custom button styling ------------------ */
+.btn-custom {
+  color: #fffdfd;
+  background-color: #ffffff;
+  border: none;
+  background-image: -moz-linear-gradient(165deg, #9898e6, #6565b3 30px);
+  background-image: -webkit-linear-gradient(165deg, #9898e6, #6565b3 30px);
+  background-image: -o-linear-gradient(165deg, #9898e6, #6565b3 30px);
+  background-image: -ms-linear-gradient(165deg, #9898e6, #6565b3 30px);
+  background-image: linear-gradient(165deg, #9898e6, #6565b3 30px);
+  box-shadow: 2px 2px 2px #8787d5;
+  line-height: 1;
+  padding: 10px;
+}
+.btn-custom:hover {
+  border: none;
+  color: #505050;
+  background-image: -moz-linear-gradient(165deg, #abffff, #78f7fd 30px);
+  background-image: -webkit-linear-gradient(165deg, #abffff, #78f7fd 30px);
+  background-image: -o-linear-gradient(165deg, #abffff, #78f7fd 30px);
+  background-image: -ms-linear-gradient(165deg, #abffff, #78f7fd 30px);
+  background-image: linear-gradient(165deg, #abffff, #78f7fd 30px);
+  box-shadow: 2px 2px 2px #9affff;
+}
+.btn-custom:active {
+  border: none;
+  color: #505050;
+  background-image: -moz-linear-gradient(165deg, #abffff, #78f7fd 30px);
+  background-image: -webkit-linear-gradient(165deg, #abffff, #78f7fd 30px);
+  background-image: -o-linear-gradient(165deg, #abffff, #78f7fd 30px);
+  background-image: -ms-linear-gradient(165deg, #abffff, #78f7fd 30px);
+  background-image: linear-gradient(165deg, #abffff, #78f7fd 30px);
+  box-shadow: 0px 0px 2px #9affff;
+}
+.btn-custom:active:focus {
+  outline: none;
+}
+.btn-custom:focus {
+  outline: none;
+}
+.navbar-header {
+  float: left;
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+}
+.navbar-brand {
+  float: none;
+  font-family: 'Comfortaa';
+  font-size: 3em;
+  color: rgba(38, 70, 109, 0.75);
+}
+.select2-container .select2-selection--single {
+  height: 40px;
+}
+.select2-container .select2-selection--single .select2-selection__rendered {
+  color: #db2929;
+  line-height: 40px;
+}
+.select2-container .select2-selection--single .select2-selection__rendered:active,
+.select2-container .select2-selection--single .select2-selection__rendered:focus {
+  outline: none;
+}
+.select2-container .select2-selection--single .select2-selection__rendered .select2-selection__placeholder {
+  color: rgba(80, 80, 80, 0.6);
+  font-family: Armata;
+  font-size: 14.4px;
+}
+@media only screen and (min-width: 480px) {
+  .select2-container .select2-selection--single .select2-selection__rendered .select2-selection__placeholder {
+    font-size: 16.2px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .select2-container .select2-selection--single .select2-selection__rendered .select2-selection__placeholder {
+    font-size: 16.2px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .select2-container .select2-selection--single .select2-selection__rendered .select2-selection__placeholder {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .select2-container .select2-selection--single .select2-selection__rendered .select2-selection__placeholder {
+    font-size: 18px;
+  }
+}
+.select2-container .select2-selection--single .select2-selection__arrow {
+  height: 40px;
+}
+.select2-container .select2-selection--single:active,
+.select2-container .select2-selection--single:focus {
+  outline: none;
+}
+.select2-search__field:active,
+.select2-search__field:focus {
+  outline: none;
+  border-color: rgba(84, 84, 162, 0.5);
+  box-shadow: 0 0 10px rgba(84, 84, 162, 0.5);
+}
+.select2-results__option {
+  border-bottom: 1px ridge;
+  color: rgba(38, 70, 109, 0.8);
+  font-family: Armata;
+  font-size: 12.8px;
+}
+@media only screen and (min-width: 480px) {
+  .select2-results__option {
+    font-size: 14.4px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .select2-results__option {
+    font-size: 14.4px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .select2-results__option {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .select2-results__option {
+    font-size: 16px;
+  }
+}
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: rgba(38, 70, 109, 0.7);
+  color: #fffdfd;
+}
+/* ============================================ Page Specific Styling ======================================== */
+/* --------------- Home Page --------------- */
+.home .question {
+  padding-top: 10px;
+}
+@media only screen and (min-width: 768px) {
+  .home .question {
+    padding-top: 15px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .home .question {
+    padding-top: 20px;
+  }
+}
+.home .question h4 {
+  padding-bottom: 10px;
+}
+@media only screen and (min-width: 768px) {
+  .home .question h4 {
+    padding-bottom: 15px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .home .question h4 {
+    padding-bottom: 20px;
+  }
+}
+.home .question input {
+  color: #db2929;
+  font-family: 'Armata';
+  font-size: 20.8px;
+  border: none;
+  box-shadow: none;
+  border-radius: 0px;
+  border-bottom: 2px solid rgba(84, 84, 162, 0.25);
+}
+@media only screen and (min-width: 480px) {
+  .home .question input {
+    font-size: 23.400000000000002px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .home .question input {
+    font-size: 23.400000000000002px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .home .question input {
+    font-size: 26px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .home .question input {
+    font-size: 26px;
+  }
+}
+.home .question input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #fffdfd inset;
+  -webkit-text-fill-color: #db2929 !important;
+}
+.home .question input:active,
+.home .question input:hover,
+.home .question input:focus {
+  color: #db2929;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  border-bottom: 2px solid rgba(84, 84, 162, 0.5);
+}
+.home .question input:active:-webkit-autofill,
+.home .question input:hover:-webkit-autofill,
+.home .question input:focus:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #fffdfd inset;
+  -webkit-text-fill-color: #db2929 !important;
+  background-color: #fffdfd;
+}
+.home .selectbox {
+  padding-bottom: 25px;
+}
+@media only screen and (min-width: 768px) {
+  .home .selectbox {
+    padding-bottom: 37.5px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .home .selectbox {
+    padding-bottom: 50px;
+  }
+}
+.home .selectbox h4 {
+  padding-bottom: 5px;
+}
+@media only screen and (min-width: 768px) {
+  .home .selectbox h4 {
+    padding-bottom: 7.5px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .home .selectbox h4 {
+    padding-bottom: 10px;
+  }
+}
